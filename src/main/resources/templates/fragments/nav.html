@@ -1,0 +1,52 @@
+
+   	   
+ <div th:fragment="navbar">
+
+  <ul id='dropdown1' class='dropdown-content'>
+     <li><a href="#!">Jayanti</a></li>
+     <li><a href="#!">Latori</a></li>
+     <li class="divider" tabindex="-1"></li>
+     <li><a href="#!">Sneha</a></li>
+     <li><a href="#!">Stacey</a></li>
+  
+  </ul>
+	<nav>
+  <div class="nav-wrapper #4db6ac teal lighten-2 " >
+    <a href="#!" class="brand-logo">HighTechLadies!</a>
+    <!-- <ul class="right hide-on-med-and-down"> -->
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/">HOME</a></li>
+     
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">About us!<i class="material-icons right"></i></a></li>
+    </ul>
+  </div>
+</nav>
+
+</div> 
+
+	 <script type="text/javascript">
+		$(".dropdown-trigger").dropdown();
+		</script> 	
+		
+<div th:fragment="foot">
+  <footer class="page-footer #4db6ac teal lighten-2">
+
+          <div class="container center">
+            <div class="row">
+              <div class="col l6 s12">
+                <p class="right-align white-text">© 2018 Tech Talent South</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+               <!--  <p class="white-text"></p> -->
+            </div>
+          </div>
+         <!--  <div class="footer-copyright">
+            <div class="container">
+            © 2018 TechTalentSouth
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>  -->
+
+        </footer>
+</div>

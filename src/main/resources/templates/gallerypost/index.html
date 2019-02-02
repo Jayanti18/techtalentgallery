@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Blog Site</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+    <!-- Add w3 template   -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- Add icon library for card -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">    
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <link rel="stylesheet" href="../css/index.css"> 
+
+    
+</head>
+<body>
+ <!-- <div th:fragment="navbar"> -->
+ 
+ <!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+   <a href="#home" class="w3-bar-item w3-button"><b>Art Gallery!</b></a> 
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+     <a href="/home" class="w3-bar-item w3-button">Home</a>
+      <a href="/artcollection" class="w3-bar-item w3-button">Art Collection</a>
+      <a href="/about" class="w3-bar-item w3-button">About</a>
+       </div> 
+  </div>
+<h1>Welcome to Our Art Gallery Site!</h1>
+<h3>Check out our Inspring Art Collections!</h3>
+
+ <!-- Add in the <body> of your template -->
+<p>Please use the form below to submit a Gallery Post:</p>
+<div class="card">
+  <div class="card-body">
+ <form action="#" th:action="@{/}" th:object="${galleryPost}" method="post">
+    <table>
+	<tr>
+            <td>Title</td>
+	    <td><input type="text" th:field="*{title}" /></td>
+	</tr>
+	<tr>
+	    <td>Artist:</td>
+	    <td><input type="text" th:field="*{artist}" /></td>
+	</tr>
+	<tr>
+    	    <td>Art Details:</td>
+	    <td><input type="text" th:field="*{artDetails}" /></td>
+	</tr>
+	<tr>
+	    <td><button type="submit">Submit Your Post</button></td>
+	</tr>
+    </table>
+</form>
+</div>
+</div>
+
+
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+     <div class="footer-copyright">
+            <div class="container">
+            © 2018 TechTalentSouth
+            
+            </div>
+          </div> 
+  
+  </footer>
+</body>
+</html>

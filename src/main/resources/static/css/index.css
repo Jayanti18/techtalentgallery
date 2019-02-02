@@ -1,0 +1,51 @@
+.card {
+    
+    height: 24rem;
+    width: 28rem;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 30px;
+    display:flex;
+    background-color:#f8f9fa;
+ 
+
+}
+
+h1, h3, p {
+	text-align:center;
+}
+
+/* p {
+	text-align:center;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+ input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+} 
+
+button[type=submit]{
+	text-align:center;
+	margin: none;
+	
+}
+
+footer {
+	position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin:15px;
+  background-color:light grey;
+  color: white;
+  text-align: center;
+}
